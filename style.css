@@ -56,6 +56,7 @@ body{
     width: 500px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    background: linear-gradient(to right, rgb(82, 82, 224), rgb(240, 143, 240));
+    /* background: linear-gradient(to right, rgb(82, 82, 224), rgb(240, 143, 240)); */
+    background: red;
     height: 200px;
 }
