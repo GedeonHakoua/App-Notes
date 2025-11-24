@@ -1,0 +1,61 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right, rgb(31, 78, 189), rgb(249, 175, 244));
+    
+}
+
+.login{
+    border: 1px solid #969292;
+    background-color: #fff;
+    display: flex;
+    width: 500px;
+    /* padding: 30px 50px; */
+    border-radius: 12px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 150px;
+    
+}
+.logo{
+    background: gray;
+    border-radius: 15px;
+    width: 70px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+.logo svg{
+    align-self: center;
+    display: flex;
+    color: #fff;
+    font-weight: 900;
+
+}
+.logo-container{
+    /* display: flex; */
+    justify-content: center;
+    justify-self: center;
+}
+.title-logo{
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    color: #fff;
+    margin-left: px;
+}
+.pre-form{
+    width: 500px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background: linear-gradient(to right, rgb(82, 82, 224), rgb(240, 143, 240));
+    height: 200px;
+}
