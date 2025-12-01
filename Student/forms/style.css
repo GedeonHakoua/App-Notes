@@ -1,0 +1,238 @@
+/* --------------------- */
+/*        VARIABLES      */
+/* --------------------- */
+:root{
+    --bg-1:#1f5ac8;
+    --bg-2:#e8b6e1;
+    --card-bg:#ffffff;
+    --muted:#6b7280;
+    --accent:#0b63ff;
+    --border:#d9d9e2;
+    --shadow:0 8px 20px rgba(0,0,0,0.18);
+    --radius:12px;
+    --max-width:360px;
+}
+
+/* --------------------- */
+/*         RESET         */
+/* --------------------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Ubuntu","Noto Sans",sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(45,189,127,0.594) 0%, rgba(26,104,198,0.45) 40%, #e8b6e1 100%);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* --------------------- */
+/*       CONTAINER       */
+/* --------------------- */
+.container{
+    width:100%;
+    max-width:var(--max-width);
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+/* --------------------- */
+/*        HEADER         */
+/* --------------------- */
+.header{
+    background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
+    padding:15px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    text-align:center;
+}
+
+/* LOGO + TITLE */
+.logo-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+}
+
+.logo{
+    width:58px;
+    height:58px;
+    background:#000;
+    border-radius:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo svg{
+    width:30px;
+    height:30px;
+    fill:#0EB366;
+}
+
+.logo-box h1{
+    font-size:20px;
+    color:#fff;
+    font-weight:700;
+}
+
+.logo-box p{
+    color:#f3f3f3;
+    font-size:13px;
+}
+
+/* --------------------- */
+/*         TABS          */
+/* --------------------- */
+.tabs{
+    margin-top:10px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+
+.tab{
+    cursor:pointer;
+    padding:6px 10px;
+    font-weight:600;
+    color:#fff;
+}
+.tab.hover{
+    background:#000;
+}
+
+
+.tab.active{
+    color:#1e86db;
+    border-bottom:3px solid #1e86db;
+}
+
+/* --------------------- */
+/*       FORM AREA       */
+/* --------------------- */
+.form-area{
+    background:#fff;
+    padding:20px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.form-area h2{
+    text-align:center;
+    font-size:18px;
+    color:#0b1430;
+}
+
+.text-muted{
+    text-align:center;
+    font-size:13px;
+    color:#777;
+}
+
+/* --------------------- */
+/*         INPUT         */
+/* --------------------- */
+.field-row{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+label{
+    font-size:14px;
+    font-weight:600;
+    color:#050505;
+}
+
+.input-field{
+    width:100%;
+    padding:10px 12px;
+    border:1px solid var(--border);
+    border-radius:8px;
+    font-size:14px;
+    transition:0.2s;
+}
+
+.input-field:focus{
+    border-color:var(--accent);
+    box-shadow:0 0 0 3px rgba(11,99,255,0.15);
+}
+
+/* --------------------- */
+/*   INPUT W/ ICON       */
+/* --------------------- */
+.input-icon{
+    position:relative;
+}
+
+.input-icon .icon{
+    position:absolute;
+    left:10px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#dcdcdc;   /* 🔒 très discret */
+    font-size:14px;
+    pointer-events:none;
+}
+
+.input-icon input{
+    padding-left:35px;
+}
+
+/* SHOW/HIDE PASSWORD */
+.pw-toggle{
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:17px;
+    color:#777;
+}
+
+/* --------------------- */
+/*      SUBMIT BTN       */
+/* --------------------- */
+.btn-submit{
+    width:100%;
+    padding:12px;
+    background:linear-gradient(90deg,var(--bg-1),var(--bg-2));
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    transition:0.2s;
+
+    
+}
+
+.btn-submit:hover{
+    background:#000;
+}
+
+/* --------------------- */
+/*       RESPONSIVE      */
+/* --------------------- */
+@media (max-width:480px){
+    .container{
+        max-width:330px;
+    }
+}

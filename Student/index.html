@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>APP Note - Inscription</title>
+    <link href="https://fonts.bunny.net/css?family=noto-sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="header" role="banner">
+            <div class="logo-box">
+                <div class="logo" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path
+                            d="M3 6c0-1.1.9-2 2-2h.5C8.1 4 10 5.9 10 8v9c0 .6-.4 1-1 1H5c-1.1 0-2-.9-2-2V6zm18 0c0-1.1-.9-2-2-2h-.5C15.9 4 14 5.9 14 8v9c0 .6.4 1 1 1h4c1.1 0 2-.9 2-2V6z" />
+                    </svg>
+                </div>
+                <h1>App Note IUC</h1>
+                <p>Pole de l'excellence en Afrique</p>
+            </div>
+
+            <nav class="tabs" role="tablist" aria-label="Connexion / Inscription">
+                <div class="tab active" role="tab" tabindex="0" aria-selected="true">Connexion</div>
+                <div class="tab" role="tab" tabindex="0">Inscription</div>
+                <div class="active-bar"></div>
+            </nav>
+        </header>
+
+        <!-- FORM AREA -->
+        <main class="form-area" role="main">
+            <h2>Créer un compte</h2>
+            <p class="text-muted">Remplissez les informations ci-dessous</p>
+
+            <form novalidate class="form-grid">
+                <div class="field-row">
+                    <label for="nom">Nom</label>
+                    <input id="nom" name="nom" type="text" class="input-field" value="Dany">
+                </div>
+                <div class="field-row">
+                    <label for="prenoms">Prénoms</label>
+                    <input id="prenoms" name="prenoms" type="text" class="input-field" value="Drums">
+                </div>
+                <div class="field-row">
+                    <label for="telephone">Téléphone</label>
+                    <div class="input-icon">
+                        <span class="icon" aria-hidden="true">📞</span>
+                        <input id="telephone" name="telephone" type="tel" class="input-field" value="695273167">
+                    </div>
+                </div>
+                <div class="field-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" class="input-field"
+                        placeholder="votre.email@example.com" required>
+
+
+                        
+                </div>
+                <div class="field-row">
+                    <label for="password">Mot de passe</label>
+                    <div class="input-icon">
+                        <input id="password" name="password" type="password" class="input-field"
+                            placeholder="Entrez un mot de passe" required minlength="8">
+                    
+                            
+                    </div>
+                </div>
+                <div class="field-row">
+                    <label for="ecole">École</label>
+                    <input id="ecole" name="ecole" type="text" class="input-field" value="3IAC">
+                </div>
+                <div class="field-row">
+                    <label for="matricule">Matricule</label>
+                    <input id="matricule" name="matricule" type="text" class="input-field" placeholder="ET#123LE">
+                </div>
+                <div class="field-row">
+                    <label for="filiere">Filière</label>
+                    <input id="filiere" name="filiere" type="text" class="input-field" value="GSI">
+                </div>
+
+                <button type="submit" class="btn-submit full">S'inscrire</button>
+            </form>
+        </main>
+    </div>
+    <script>
+const pwToggle = document.querySelector('.pw-toggle');
+const pwInput = document.querySelector('#password');
+
+pwToggle.addEventListener('click', () => {
+    if(pwInput.type === 'password'){
+        pwInput.type = 'text';
+        pwToggle.textContent = '🙈';  // change l'icône
+    } else {
+        pwInput.type = 'password';
+        pwToggle.textContent = '👁️';
+    }
+});
+</script>
+
+</body>
+
+</html>
